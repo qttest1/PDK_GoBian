@@ -1,0 +1,90 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+
+# common exclude 
+*.a
+*.d
+*.o
+*.ko
+*.su
+*.abs
+*.bin
+*.cmd
+*.dis
+*.img
+*.lds
+*.map
+*.out
+*.swp
+*.srec
+*.order
+*.depend
+*.depend.*
+*.version
+*.builtin
+
+# uboot exclude
+uboot/u-boot
+uboot/tools/mkimage
+uboot/tools/mkenvimage
+uboot/tools/gen_eth_addr
+uboot/lib/asm-offsets.s
+uboot/include/asm
+uboot/include/config.h
+uboot/include/config.mk
+uboot/include/generated
+uboot/include/autoconf.mk
+uboot/include/autoconf.mk.dep
+uboot/arch/arm/include/asm/arch
+uboot/arch/arm/include/asm/proc
+uboot/uboot_merger/uboot_output
+uboot/examples/standalone/hello_world
+uboot/arch/arm/cpu/armv7/ali3921soc/asm-offsets.s
+
+# tds exclude
+tds/ae_sdk/obj
+tds/see_sdk/obj
+tds/ae_sdk/src/path.def
+tds/ae_sdk/src/compiler.def
+tds/see_sdk/src/path.def
+tds/see_sdk/src/compiler.def
+
+# pdk exclude
+pdk/linux/install
+pdk/linux/kernel/install
+pdk/linux/kernel/kernel/build/linux-3.18.16/vmlinux
+pdk/linux/kernel/kernel/build/linux-3.18.16/.tmp_versions
+pdk/linux/kernel/kernel/build/linux-3.18.16/.tmp_vmlinux1
+pdk/linux/kernel/kernel/build/linux-3.18.16/.tmp_vmlinux2
+pdk/linux/kernel/kernel/build/linux-3.18.16/drivers/alidrivers
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/boot/Image
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/boot/zImage
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/boot/compressed/vmlinux
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/boot/compressed/piggy.gzip
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/mach-ali3921/mach-ali3921
+pdk/linux/kernel/kernel/build/linux-3.18.16/arch/arm/include/asm/mach-ali/mach-ali
+pdk/linux/kernel/kernel/build/linux-3.18.16/include/generated
+pdk/linux/kernel/kernel/build/linux-3.18.16/include/config/auto.conf
+pdk/linux/kernel/kernel/build/linux-3.18.16/include/config/tristate.conf
+pdk/linux/kernel/kernel/build/linux-3.18.16/include/config/kernel.release
+pdk/linux/kernel/kernel/build/linux-3.18.16/usr/initramfs_data.cpio.gz
+pdk/linux/kernel/kernel/build/linux-3.18.16/drivers/gpu/arm/ump/arch/arch-default
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libEGL.so
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libEGL.so.1
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libEGL.so.1.4
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libGLESv2.so
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libGLESv2.so.2
+pdk/linux/kernel/thirddrivers/mali/Mali_Linux/lib/libGLESv2.so.2.0
+
+# tools exclude
+pdk/tools/hosttools/python/mac.pyc
+pdk/tools/hosttools/python/bytes.pyc
+pdk/tools/hosttools/python/bytefp.pyc
+pdk/tools/hosttools/python/scriptxml.pyc
